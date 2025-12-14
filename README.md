@@ -86,9 +86,9 @@ The goal was to identify acquisition trends, retention drivers, and monetization
 
 #🗃️ Dataset
 
-Source: SaaS Product Dashboard Dataset – Kaggle
-Author: Philbert Chan
-License: CC0 1.0 Public Domain Dedication
+Source: [SaaS Product Dashboard Dataset – Kaggle](https://www.kaggle.com/datasets/philbertchan/saas-product-dashboard-mau-feature-usage-mrr)
+Author: [Philbert Chan](https://www.kaggle.com/philbertchan)
+License: [CC0 1.0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ---
 
