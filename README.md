@@ -119,5 +119,6 @@ License: CC0 1.0 Public Domain Dedication
 
 # 🙌 Acknowledgment
 
-Dataset by Philbert Chan
-Licensed under CC0 1.0 Public Domain
+Dataset by [Philbert Chan](https://www.kaggle.com/philbertchan)
+
+Licensed under [CC0 1.0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
