@@ -28,4 +28,96 @@ The goal was to identify acquisition trends, retention drivers, and monetization
 # 🔍 Key Insights
 
 ## 1. Customer Acquisition
-- Monthly signups peaked in #Jan and #Mar 2022.
+- Monthly signups peaked in **Jan** and **Mar 2022**.
+- Top plan at signup: **Free** (48 users).
+- Top country: **Canada**; lowest:**India**
+
+## 2. Retention & Churn
+- Current monthly churn: **26%** _(June 2022)_, compares to Saas benchmarks of ~5-7%.
+
+## 3. Revenue & Monetization
+- MRR fluctuated - highest in **Feb 2022** ($520) and lowest in **Apr 2022**.
+- ARPU is highest in the **Pro plan**.
+- Revenue distribution: **Canada** leads with 37.58%, lowest in **UK** with 17.45%.
+
+## 4. Engagement & Product Usage
+- Monthly active users were stable in the first three months (**6%, 7%, 9%**).
+- These months saw the **highest MRR**, showing a correlation between MAU stability and revenue peaks.
+- In month four, MAU dropped to 4%, coinciding with MRR falling from **$440** to **$130**.
+
+---
+
+# 💡 Strategic Recommendations
+
+## 1. Boost high-value adoption
+- Highlight Pro features in onboarding emails.
+- Offer upgrade discounts in the first 30 days.
+
+## 2. Double down on peak acquisition month strategies
+- Replicate successful Jan/Mar campaigns in slower periods.
+
+## 3. Address early churn
+- Focus retention efforts within the first 90 days.
+- Use personalized reactivation campaigns.
+
+## 4. Correlate engagement to revenue
+- Explore how sustained MAU in early months drives MRR stability.
+
+---
+
+# ⚠️ Caveats & Limitations
+- **Short Time Range:** The dataset covers a limited number of months, making it hard to capture long-term seasonality or trends.
+- **Partial Churn Insight:** Churn rates are calculated from available data but may not reflect true behavior if cancellations weren't logged consistently.
+- **MRR Variability:** Monthly recurring revenue is sensitive to small user count changes due to the relatively small sample size.
+- **Engagement Data Gaps:** Not all users have complete event logs, which could skew MAU and feature usage metrics.
+- **Plan Definition Ambiguity:** "Free", "Basic", and "Pro" plan benefits are assumed; no feature mapping was included in the dataset.
+- **Country Representation:** Some countries have very low sample sizes (e.g. India, UK), making percentage comparisons less reliable.
+- **Feature Usage Inflation:** Extremely high engagement percentage for Feature B likely refelects repeated event logging rather than unique user interaction.
+
+---
+
+# 🧠 What I Did
+- Cleaned and transformed raw event logs and subscription records into structured tables (silver_events, dim_subscriptions, etc).
+- Built multiple SQL views to analyze revenue trends, plan performance, and retention.
+- Normalize data formats and created a fiscal calendar logic.
+- Designed layered reporst, including plan_report_saas, plan_summary_report, and user_value_segmentation.
+
+---
+
+#🗃️ Dataset
+
+Source: SaaS Product Dashboard Dataset – Kaggle
+Author: Philbert Chan
+License: CC0 1.0 Public Domain Dedication
+
+---
+
+# 🏗️ Project Structure
+
+<img width="1154" height="362" alt="image" src="https://github.com/user-attachments/assets/aecb478a-184b-4fa2-ad48-8290592b2b7e" />
+
+---
+
+# 📊 Reports & Views
+
+- docs/01_vw_plan_summary.sql - Plan-level metrics (ARPU, churn).
+- docs/02_vw_country_revenue_churn.sql - Revenue and churn by country.
+- docs/03_vw_event_trend_monthly.sql - Event volumes and user counts monthly.
+- docs/04_vw_plan_distribution.sql - User & revenue share by plan
+- docs/05_vw_customer_summary_report.sql - User-level segmentation & spend.
+- docs/06_vw_plan_report_saas.sql - Plan performace, ARPU, engagement.
+- docs/ - Executive Summary & Recommendations
+
+---
+
+# 🔧 Tools & Technologies
+- **SQL (MySQL**
+- **Git & Github**
+- **Data cleaning & Transformation** (SQL Views, CTEs)
+
+---
+
+# 🙌 Acknowledgment
+
+Dataset by Philbert Chan
+Licensed under CC0 1.0 Public Domain
