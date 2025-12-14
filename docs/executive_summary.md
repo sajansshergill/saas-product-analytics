@@ -30,6 +30,9 @@ The purpose of this project is to analyze a SaaS product's user behavior, demogr
 
 ## Recommendations:
 - Upsell Active Free Users Strategically: Leverage engagement data (e.g., events per user) to identify high-activity Free users who are most likely to convert. Target them with personalized upgrade prompts or feature-limited trials of paid plans.
+
 - Strengthen Retention for Basic Plan Users: The Basic plan shows moderate churn and sits at a critical point in the upgrade funnel. Improve onboarding, in-app nudges, and support for this tier to reduce drop-off and increase lifetime value.
-- Priorit
+
+- Prioritize High-LTV Demographics in Acquisition: Expand marketing and outreach in regions and demographics historically associated with high ARPU and low churn. Tailor campaigns to match these users' behaviors and product usage patterns.
+
 
